@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="col-9">
+        <h2 class="text-primary">TrailList</h2>
+    </div>
+    <div class="col-3 text-right">
+        <a class="btn btn-info" asp-action="Upsert">
+            <i class="fas fa-plus"></i>&nbsp;NewTrailList
+        </a>
+    </div>
+</div>
+<div class="p-3">
+    <table id="tblData" class="table table-active table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>National Park</th>
+                <th>Name</th>
+                <th>Distance</th>
+                <th>Elevation</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+    {
+    <script src="~/js/Trail.js"></script>
+}
